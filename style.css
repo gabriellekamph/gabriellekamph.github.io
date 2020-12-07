@@ -18,7 +18,7 @@ body {
 
 .left {
   left: 0;
-  background-color: #708C84;
+  background-color: #151C1B;
   color: #fff;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -45,9 +45,33 @@ body {
 }
 
 h1 {
-  font-family: 'Abril Fatface', cursive;
-  font-size: 6vw;
+  --color1: #93C7BD;
+  --color2: #48615C;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 5vw;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color1),
+    var(--color1) 30px,
+    var(--color2) 30px,
+    var(--color2) 60px
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: 40s linear 0s infinite move;
 }
+
+@keyframes move {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: 1000px;
+  }
+}
+
 
 h1::selection, p::selection {
   background: #C0F1E8; 
@@ -67,13 +91,13 @@ mark {
   font-family: 'Oxygen', sans-serif;
   font-size: 16px;
   background-color: #fff;
-  color: #708C84;
+  color: #77A199;
  }
 
 /* Settings for links */
 
 a {
-  color: #708C84;
+  color: #77A199;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.1em;
@@ -91,7 +115,7 @@ a:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #AABFBF;
+  background: #77A199;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -119,7 +143,7 @@ a:hover:after {
   }
 
   h1 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: "Open Sans", sans-serif;
     font-size: 12vw;
   }
 }
