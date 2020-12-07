@@ -18,8 +18,10 @@ body {
 
 .left {
   left: 0;
-  background-color: #16A085;
+  background-color: #708C84;
   color: #fff;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .right {
@@ -65,13 +67,13 @@ mark {
   font-family: 'Oxygen', sans-serif;
   font-size: 16px;
   background-color: #fff;
-  color: #16A085;
+  color: #708C84;
  }
 
 /* Settings for links */
 
 a {
-  color: #16A085;
+  color: #708C84;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.1em;
@@ -89,7 +91,7 @@ a:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #16A085;
+  background: #AABFBF;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
