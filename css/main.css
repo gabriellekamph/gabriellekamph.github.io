@@ -13,12 +13,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #93C7BD;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: #93C7BD;
   text-shadow: none;
 }
 
