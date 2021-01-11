@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+::-moz-selection {
+  background: #93C7BD;
+  text-shadow: none;
+}
+
+::selection {
+  background: #93C7BD;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #151C1B;
+  color: #fff;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.right {
+  right: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img {
+  width: 220px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+h1 {
+  --color1: #93C7BD;
+  --color2: #48615C;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 5vw;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color1),
+    var(--color1) 30px,
+    var(--color2) 30px,
+    var(--color2) 60px
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: 40s linear 0s infinite move;
+}
+
+@keyframes move {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: 1000px;
+  }
+}
+
+p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+mark {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  color: #77A199;
+ }
+
+/* Settings for links */
+
+a {
+  color: #77A199;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-family: 'Oxygen';
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #77A199;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+@media only screen and (max-width: 600px) {
+  .left, .right {
+  height: 100%;
+  width: 50%;
+  }
+
+  .split {
+     position: relative;
+     width: 100%;
+     padding-top: 0px;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12vw;
+  }
+}
