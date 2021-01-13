@@ -1,71 +1,128 @@
 <!doctype html>
-<html class="no-js" lang="en" prefix="og: https://ogp.me/ns#">
+<html class="no-js" lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Gabrielle Kamph</title>
-    <meta name="description" content="Digital marketer currently studying to become a front end developer. Get in touch!">
-    <meta name="keywords" content="Personal website, CV, front end developer">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="Gabrielle Kamph">
-    <meta property="og:description" content="Digital marketer currently studying to become a front end developer. Get in touch!">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gabriellekamph.se/index.html">
-    <meta property="og:image" content="https://gabriellekamph.se/img/gabs.jpg">
+  <title>Gabrielle Kamph - Digital creative | Front-end developer</title>
+  <meta name="title" content="Gabrielle Kamph - Digital creative | Front-end developer">
+  <meta name="description" content="Online portfolio for Gabrielle Kamph. Digital creative and front-end developer based in Stockholm., Sweden. Get in touch at hello@gabriellekamph.se.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gabriellekamph.se/">
+  <meta property="og:title" content="Gabrielle Kamph - Digital creative | Front-end developer">
+  <meta property="og:description" content="Online portfolio for Gabrielle Kamph. Digital creative and front-end developer based in Stockholm., Sweden. Get in touch at hello@gabriellekamph.se.">
+  <meta property="og:image" content="http://gabriellekamph.se/img/meta-picture.png">
 
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-  </head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-  <body>
+  <meta name="theme-color" content="#fafafa">
+</head>
 
-    <div class="split">
-      <div class="split left">
-        <div class="centered">
-          <h1>Hello,<br>
-            is it me <br>
-            you're<br>
-            looking for?
-          </h1>
-        </div>
+<body>
+  <main> 
+    <button onclick="topFunction()" id="arrow-up" title="Go to top">
+      <i class="fas fa-chevron-up arrow-up"></i>
+    </button>
+
+    <!-- //////////////////////  TOP NAVIGATION BELOW  /////////////////////// -->  
+
+    <nav class="topnav">
+      <ul>
+        <li><a href="#home">Home</a> | </li>
+        <li><a href="#about">About</a> | </li>
+        <li><a href="#portfolio">Portfolio</a> |</li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ///////////////////////  HOME SECTION BELOW  /////////////////////// -->
+
+    <header id="home">
+      <h1>Gabrielle Kamph</h1>
+      <div class="typing-wrapper"><p class="typing anim-typewriter">Digital creative | Front-end developer</p></div>
+      <a href="#about"><i class="fas fa-chevron-down arrow-down"></i></a>
+    </header>
+
+    <!-- //////////////////////  ABOUT SECTION BELOW  ////////////////////// --> 
+
+    <section id="about">
+      <img class="about-image" src="img/gabs.jpg" alt="Black and white profile picture of Gabrielle Kamph">
+      <div class="about-text">
+        <h2><span class="underline">About me</span></h2>
+        <p>I’m Gabrielle Kamph, a digital creative and front-end developer based in Stockholm, Sweden. <br /><br />I have extensive experience within the field of digital marketing and a broad palette of skills such as content marketing, social media marketing, copywriting, project management, marketing automation and graphic design. <br /><br />I’m currently studying front-end development at Medieinstitutet to get cutting-edge knowledge in the field, graduating fall 2022. Don't hesitate to get in touch!</p> 
       </div>
-    </div>
-      
-    <div class="split right">
-      <div class="centered">
-        <img src="./img/gabs.jpg" alt="Profile picture" class="img">
-          <p>I'm <mark>Gabrielle Kamph</mark>, a digital marketer currently studying to become a <mark>front end developer</mark>. <br><br>
-            I have extensive experience within the field of <mark>digital marketing</mark> and a <mark>broad palette of skills </mark> such as 
-            content marketing, social media marketing, copywriting, project management, marketing automation and graphic design.</p>
+    </section>
+
+    <!-- ////////////////////  PORTFOLIO SECTION BELOW  //////////////////// -->
     
-          <a href="mailto:hello@gabriellekamph.se" class="button">Get in touch</a><br>
-    
-          <a href="https://www.linkedin.com/in/gabriellekamph/" target="_blank"><object type="image/svg+xml" data="./icons/linkedin.svg" width="20" height="20"></object></a>
-          <a href="https://github.com/gabriellekamph" target="_blank"><object type="image/svg+xml" data="./icons/github.svg" width="20" height="20"></object></a>
-          <a href="https://www.facebook.com/gabrielle.kamph" target="_blank"><object type="image/svg+xml" data="./icons/facebook-f.svg" width="20" height="20"></object></a>
+    <section id="portfolio">
+      <h2><span class="underline">Portfolio</span></h2>
+      <p>You'll find some of my selected work here soon. Stay tuned!</p>
+
+      <div class="projects-wrapper">
+        <div class="project1"><a href="#"><img src="img/placeholder.png" class="project-img" alt="Placeholder image"></a></div>
+        <div class="project2"><a href="#"><img src="img/placeholder.png" class="project-img" alt="Placeholder image"></a></div>
+        <div class="project3"><a href="#"><img src="img/placeholder.png" class="project-img" alt="Placeholder image"></a></div>
+        <div class="project3"><a href="#"><img src="img/placeholder.png" class="project-img" alt="Placeholder image"></a></div>
       </div>
-    </div> 
+    </section>
 
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ESKSRQNENP"></script>
-      <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!-- /////////////////////  CONTACT SECTION BELOW  ///////////////////// -->
     
-      gtag('config', 'G-ESKSRQNENP');
-      </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <section id="contact">
+      <h2><span class="underline">Get in touch</span></h2>
+      <div class="contact-wrapper">
+        <address class="contact-info">
+          <p><a href="mailto:hello@gabriellekamph.se" class="contact">hello@gabriellekamph.se</a><br>+46 (0) 76 - 18 22 864<br /></p>
+          <a href="https://www.facebook.com/gabrielle.kamph" target="_blank"><i class="fab fa-facebook-f"></i></a> 
+          <a href="https://www.linkedin.com/in/gabriellekamph/" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
+          <a href="https://github.com/gabriellekamph" target="_blank"><i class="fab fa-github-alt"></i></a> 
+        </address>
+        
+        <form class="contactform-wrapper" method="post" action="mailto:hello@gabriellekamph.se" enctype="text/plain"> 
+          <label for="name">Name</label><br /><input type="text" name="name" id="name" class="contactform" /><br />
+          <label for="email">Email</label><br /><input type="email" name="email" id="email" class="contactform" /><br />
+          <label for="text">Message</label><br /><textarea name="text" id="text" class="contactform"></textarea><br />
+          <input type="submit" value="Send"/>
+        </form>
+      </div>
+    </section>  
+  </main>
 
-  </body>
+    <!-- //////////////////////  JAVASCRIPT BELOW  ////////////////////// -->
+
+  <script>
+
+    // Show "back to top-arrow" when scrolling down on the page (100px from the top)
+
+    var mybutton = document.getElementById("arrow-up");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+  </script>
+  
+</body>
 </html>
